@@ -24,6 +24,7 @@
       display: flex;
       align-items:center;
       justify-content: center;
+      font-weight: 400;
       font-size: 15px;
       font-family: 'Lexend Deca', sans-serif;
     }
@@ -46,14 +47,16 @@
     h1{
       color: hsl(0, 0%, 95%);
       font-family: 'Big Shoulders Display', cursive;
+      font-size: 40px;
       font-weight: 700;
+      margin-bottom: -1px;
     }
 
     .card{
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      padding: 40px;
+      padding: 40px 50px 40px 45px;
       color: hwb(0 100% 0% / 0.75);
     }
 
@@ -70,7 +73,6 @@
     }
 
     button{
-      font-weight: bold;
       font-family: 'Lexend Deca', sans-serif;
       border-radius: 20px;
       margin-top: 40px;
@@ -79,6 +81,7 @@
       padding: 0 10% 0 10%;
       border: 1px solid white;
       border-color: hsl(0, 0, 95%);
+      cursor: pointer;
     }
 
     #sedan-button{
@@ -113,12 +116,19 @@
 
     @media(max-width: 975px){
       .container{
-        width: 80%;
+        margin: 70px 0 70px 0;
+        width: 85%;
         flex-direction: column;
       }
 
       button{
         width: 60%;
+        margin-top: 10px;
+        padding: 2% 7% 2% 7%;
+      }
+
+      .card{
+        padding: 50px;
       }
     }
 
@@ -136,7 +146,7 @@
     
     <div class = 'card' id = 'suvs'>
       <img src = './images/icon-suvs.svg'>
-      <h1>SUVs</h1>
+      <h1>SUVS</h1>
       <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p><br>
       <button id = 'suv-button'>Learn more</button>
     </div>
