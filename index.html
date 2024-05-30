@@ -12,8 +12,6 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
 
     *{
       transition: 0.2s ease;
@@ -31,8 +29,9 @@
 
     .container {
       display: flex;
-      min-width: 560px;
+      justify-content: space-around;
       width: 50%;
+      min-width: 560px;
       margin: 150px 20px 100px 20px;
       border-radius: 10px;
       overflow: hidden;
@@ -42,15 +41,15 @@
     }
     img{
       width: 60px;
+      margin-bottom: 20px;
     }
 
 
-    h1{
+    span{
       color: hsl(0, 0%, 95%);
       font-family: 'Big Shoulders Display', cursive;
       font-size: 40px;
       font-weight: 700;
-      margin-bottom: -1px;
     }
 
     .card{
@@ -137,31 +136,29 @@
   </style>
 </head>
 <body>
-  <div class = 'container'>
+  <main class = 'container'>
 
-    <div class = 'card' id = 'sedans'>
+    <section class = 'card' id = 'sedans'>
       <img src = './images/icon-sedans.svg'>
-      <h1>SEDANS</h1>
+      <span>SEDANS</span>
       <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p><br>
       <button id = 'sedan-button'>Learn more</button>
-    </div>
+    </section>
     
-    <div class = 'card' id = 'suvs'>
+    <section class = 'card' id = 'suvs'>
       <img src = './images/icon-suvs.svg'>
-      <h1>SUVS</h1>
+      <span>SUVS</span>
       <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p><br>
       <button id = 'suv-button'>Learn more</button>
-    </div>
+    </section>
     
-    <div class = 'card' id = 'luxury'>
+    <section class = 'card' id = 'luxury'>
       <img src = './images/icon-luxury.svg'>
-      <h1>LUXURY</h1> 
+      <span>LUXURY</span> 
       <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p><br>
       <button id = 'luxury-button'>Learn more</button>
-    </div>
+    </section>
 
-  </div>
-  
-  
+  </main>  
 </body>
 </html>
